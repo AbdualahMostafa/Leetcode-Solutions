@@ -1,18 +1,12 @@
 class Solution {
 public:
     void reverseString(vector<char>& s) {
-       stack<char>st;
-        for(int i=0; i<s.size(); i++){
-            st.push(s[i]);
+       int l=0,r=s.size()-1;
+        while (l<r){
+            char temp=s[l];
+            s[l]=s[r];
+            s[r]=temp;
+            l++,r--;
         }
-        s.clear();
-        for(int i=0; st.size(); i++){
-            s.push_back(st.top());
-            st.pop();
-        }
-        for(int i=0; i<s.size(); i++){
-            cout<<s[i];
-        }
-        
     }
 };
