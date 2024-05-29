@@ -1,0 +1,5 @@
+/* Write your T-SQL query statement below */
+
+Select E.Unique_id as unique_id, Emps.Name as name
+From EmployeeUNI E right join Employees Emps
+On Emps.Id=E.Id
