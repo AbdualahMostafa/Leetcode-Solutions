@@ -1,0 +1,5 @@
+/* Write your T-SQL query statement below */
+
+Select P.product_name ,S.year ,S.Price
+From Sales S Left join Product P
+On S.Product_Id = P.Product_Id
